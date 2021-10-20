@@ -1,0 +1,71 @@
+.pozadi{
+    background-color: #cfcfcf;
+    /* max-width: 580px; */
+    margin: 2px;
+    padding: 30px;
+}
+.obrazek{
+    background-color: #302e4e;
+    border-radius: 10px;
+    margin:10px;
+    margin-bottom: 20px;
+    
+    
+}
+
+img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+.popisek{
+    width: 95%;
+    text-align: right;
+    color:white;
+}
+
+@media(min-width: 600px){
+    
+    .obrazky{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    
+    .obrazek{
+        width: 48%;
+    }
+}
+
+@media(min-width: 800px){
+    .pozadi{
+        height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .prvni{
+        width: 65%;
+    }
+    
+    .obrazky{
+        flex-direction: column;
+        order: 3;
+    }
+
+    .obrazek{
+        width: 100%;
+        margin: 5px;
+    }
+
+    .druhy{
+        width: 65%;
+    }
+
+    .obrazky{
+        width: 33%;
+    }
+}
